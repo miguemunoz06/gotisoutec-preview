@@ -1,201 +1,117 @@
 <!DOCTYPE html>
 <html lang="es-CO">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tisoutec · RipsSolutions | Validación de RIPS, CUV y automatización para IPS</title>
-  <meta name="description" content="RipsSolutions valida y corrige RIPS, obtiene el CUV ante SISPRO y arma cuentas médicas para radicar ante la EPS.">
-  <meta name="theme-color" content="#010b22">
-  <link rel="icon" type="image/png" href="https://ripssolutions.com/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tisoutec | Tecnología que resuelve</title>
+<meta name="description" content="Tisoutec desarrolla software, automatiza procesos, integra sistemas e implementa infraestructura para empresas.">
+<meta name="theme-color" content="#010b22">
+<link rel="stylesheet" href="assets/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="wrap">
-      <a class="brand" href="index.html" aria-label="RipsSolutions inicio">
-        <img src="https://ripssolutions.com/icon.png" width="36" height="36" alt="">
-        <span><strong>RIPS<span>SOLUTIONS</span></strong><small>Tisoutec</small></span>
-      </a>
-      <nav class="nav" aria-label="Principal">
-        <a href="#producto">Producto</a>
-        <a href="#modulos">Módulos</a>
-        <a href="#automatizacion">Automatización RPA</a>
-        <a href="#planes">Planes</a>
-        <a href="#preguntas">Preguntas</a>
-        <a class="btn btn-primary" href="https://calendar.app.google/LBn7QmHrJofyFAu97">Agendar demo</a>
-      </nav>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </div>
-  </header>
-  <div class="mobile-nav" id="menu-movil">
-    <nav aria-label="Móvil">
-      <a href="#producto">Producto</a>
-      <a href="#modulos">Módulos</a>
-      <a href="#automatizacion">Automatización RPA</a>
-      <a href="#planes">Planes</a>
-      <a href="#preguntas">Preguntas</a>
-      <a class="btn btn-primary" href="https://calendar.app.google/LBn7QmHrJofyFAu97">Agendar demo</a>
-    </nav>
-  </div>
-  <main>
-    <section class="hero" id="inicio">
-      <div class="wrap">
-        <div>
-          <p class="eyebrow">RipsSolutions · Tisoutec</p>
-          <h1>Menos trabajo manual en RIPS, CUV y cuentas médicas</h1>
-          <p class="sub">RipsSolutions valida y corrige tus RIPS, obtiene el CUV ante SISPRO y arma tus cuentas para radicar ante la EPS, con menos rechazos.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="https://calendar.app.google/LBn7QmHrJofyFAu97">Agendar demo</a>
-            <a class="btn btn-ghost" href="https://wa.me/573152632407">Escribir por WhatsApp</a>
-          </div>
-          <p class="hint">Para gerentes, coordinadores de facturación y de sistemas de IPS en Colombia.</p>
-        </div>
-        <div class="mock" aria-hidden="true">
-          <div class="mock-glow"></div>
-          <div class="mock-frame">
-            <div class="mock-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:.6rem">RipsSolutions · Panel</span></div>
-            <div class="mock-grid">
-              <aside class="mock-side"><div class="on">Panel</div><div>Carga</div><div>CUV</div><div>Cuentas</div><div>Reglas</div></aside>
-              <div class="mock-main">
-                <div class="kpis">
-                  <div class="kpi"><span>Validados</span><strong>128</strong></div>
-                  <div class="kpi"><span>En corrección</span><strong>14</strong></div>
-                  <div class="kpi"><span>CUV listos</span><strong>96</strong></div>
-                  <div class="kpi"><span>Cuentas ZIP</span><strong>31</strong></div>
-                </div>
-                <div class="table">
-                  <div class="t-head"><span>Archivo</span><span>Estado</span><span>CUV</span></div>
-                  <div class="t-row"><span>FE19284.json</span><span class="pill">Aceptado</span><span>Sí</span></div>
-                  <div class="t-row"><span>FE19285.json</span><span class="pill muted">Corregido</span><span>Sí</span></div>
-                  <div class="t-row"><span>FE19286.json</span><span class="pill soft">Validando</span><span>—</span></div>
-                  <div class="t-row"><span>FE19287.json</span><span class="pill">Aceptado</span><span>Sí</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section"><div class="wrap">
-      <p class="kicker">El problema</p>
-      <h2>El rechazo no empieza en la EPS. Empieza en el archivo.</h2>
-      <div class="grid-3">
-        <article class="card"><h3>Glosas y rechazos de SISPRO</h3><p>Un RIPS con errores de estructura, RVG08 o Res. 948 no obtiene CUV. Sin CUV, la factura no se radica ni se cobra.</p></article>
-        <article class="card"><h3>Horas de reproceso manual</h3><p>Corregir JSON, volver a validar y reenviar consume el tiempo del área de facturación. Cada rechazo es un ciclo que se repite.</p></article>
-        <article class="card"><h3>Soportes desordenados al radicar</h3><p>PDF sueltos, nombres distintos a los que pide la EPS y carpetas incompletas retrasan la radicación y abren la puerta a glosas.</p></article>
-      </div>
-    </div></section>
-    <section class="section bg-mist" id="producto"><div class="wrap">
-      <p class="kicker">Cómo funciona</p>
-      <h2>Cinco pasos, del archivo a la radicación.</h2>
-      <ol class="grid-5" style="list-style:none;padding:0;margin:2.6rem 0 0">
-        <li class="card white"><span class="step-n">01</span><h3>Cargar archivos</h3><p>Sube el RIPS en JSON y el XML de la factura electrónica. También puedes partir de una plantilla Excel.</p></li>
-        <li class="card white"><span class="step-n">02</span><h3>Corrección automática</h3><p>Patrones de reemplazo, consecutivos, RVG08 y reglas de la Res. 948 se aplican antes de enviar a SISPRO.</p></li>
-        <li class="card white"><span class="step-n">03</span><h3>Validación SISPRO</h3><p>El archivo se valida contra el Mecanismo Único de Validación. Ves los hallazgos con claridad.</p></li>
-        <li class="card white"><span class="step-n">04</span><h3>Obtener CUV</h3><p>Cuando el RIPS es aceptado, descargas el CUV individual o masivo, listo para radicar.</p></li>
-        <li class="card white"><span class="step-n">05</span><h3>Radicar ante la EPS</h3><p>JSON, CUV y soportes quedan armados con la nomenclatura exigida para enviar la cuenta al pagador.</p></li>
-      </ol>
-    </div></section>
-    <section class="section" id="modulos"><div class="wrap">
-      <p class="kicker">Módulos</p>
-      <h2>Lo que opera el equipo de facturación, en un solo producto.</h2>
-      <div class="grid-3" style="margin-top:2.6rem">
-        <article class="card"><h3>Núcleo RIPS</h3><p>El flujo completo de validación, corrección y CUV en un solo panel.</p><ul class="check"><li>Dashboard operativo</li><li>Cargar RIPS y XML</li><li>Reenviar RIPS JSON</li><li>Obtener CUV</li><li>Gestor de archivos</li><li>Excel a JSON</li><li>Patrones de reemplazo</li><li>Credenciales SISPRO</li><li>Validaciones RVG08 y Res. 948</li></ul></article>
-        <article class="card white"><h3>Homologaciones</h3><p>Detecta la EPS por el NIT del XML de la factura y aplica las equivalencias de códigos exactas de cada pagador sobre el RIPS JSON, para evitar rechazos. Sirve a cualquier IPS que facture a varias EPS.</p></article>
-        <article class="card mod-dark"><span class="badge">Plan Profesional</span><h3>Armado de Cuenta</h3><p>Organiza, clasifica, une y renombra los soportes PDF según la Res. 2284 y los deja en un ZIP listo para radicar. Funciona en modo manual o por carpetas, y tiene RPA con Hosvital y Facture.</p></article>
-      </div>
-    </div></section>
-    <section class="section bg-mist" id="automatizacion"><div class="wrap rpa">
-      <div>
-        <p class="kicker">Tisoutec</p>
-        <h2>Automatización RPA a la medida</h2>
-        <p class="lead">Robots de Tisoutec que ejecutan procesos repetitivos en portales de EPS y sistemas internos: autorizaciones, descargas o cargues masivos.</p>
-        <p class="lead">El precio se cotiza según el volumen y la complejidad del proceso.</p>
-        <a class="btn btn-primary" href="#contacto" style="margin-top:1.5rem">Cotizar mi proceso</a>
-      </div>
-      <div class="rpa-list">
-        <div>Gestión de autorizaciones en portales de EPS</div>
-        <div>Descargas y cargues masivos de archivos</div>
-        <div>RPA con Hosvital y Facture</div>
-        <div>Procesos diseñados sobre tu operación real</div>
-      </div>
-    </div></section>
-    <section class="section" id="planes"><div class="wrap">
-      <p class="kicker">Planes</p>
-      <h2>Mensualidad fija. Implementación según tu volumen.</h2>
-      <div class="plans">
-        <article class="plan"><h3>Básico</h3><p class="price">$150.000/mes</p><ul class="check"><li>Núcleo RIPS</li><li>Homologaciones</li><li>Soporte en la aplicación</li></ul><a class="btn btn-dark" href="#contacto">Solicitar cotización</a></article>
-        <article class="plan featured"><span class="badge">Más elegido</span><h3>Profesional</h3><p class="price">$300.000/mes</p><ul class="check"><li>Todo el plan Básico</li><li>Soporte de errores RIPS y XML</li><li>Armado de Cuenta</li><li>Atención prioritaria</li></ul><a class="btn btn-primary" href="#contacto">Solicitar cotización</a></article>
-        <article class="plan"><h3>Premium</h3><p class="price">$600.000/mes</p><ul class="check"><li>Todo el plan Profesional</li><li>Acompañamiento de 6 horas</li><li>Capacitación</li><li>Canal directo</li></ul><a class="btn btn-dark" href="#contacto">Solicitar cotización</a></article>
-      </div>
-      <p class="note">La implementación se cotiza según tu volumen mensual de RIPS. Mensualidad fija más implementación.</p>
-    </div></section>
-    <section class="section bg-mist"><div class="wrap">
-      <p class="kicker">Confianza</p>
-      <h2>Lo que sí puedes verificar hoy</h2>
-      <p class="lead">No publicamos testimonios ni logos hasta tener autorización escrita de cada IPS.</p>
-      <div class="trust">
-        <article class="card white"><h3>Validación antes de enviar</h3><p>Revisas estructura, contenido y reglas RVG08 / Res. 948 antes de entregar el archivo a SISPRO.</p></article>
-        <article class="card white"><h3>Obtención del CUV</h3><p>Conexión con SISPRO para solicitar el Código Único de Validación cuando el RIPS es aceptado.</p></article>
-        <article class="card white"><h3>Res. 2284 en el armado</h3><p>El módulo de Armado de Cuenta organiza y nombra soportes PDF según la nomenclatura de radicación.</p></article>
-        <article class="card white"><h3>Res. 948 vigente</h3><p>Reglas actualizadas de la Resolución 948 de 2026 sobre el RIPS JSON y su relación con la factura electrónica.</p></article>
-      </div>
-      <div class="placeholder">Este espacio está reservado para testimonios de IPS que autoricen su publicación.</div>
-    </div></section>
-    <section class="section" id="preguntas"><div class="wrap faq-wrap">
-      <div><p class="kicker">Preguntas</p><h2>Antes de agendar la demo.</h2></div>
-      <div class="faq">
-        <div class="faq-item"><h3><button type="button" aria-expanded="true">¿La demo requiere credenciales SISPRO?</button></h3><div class="ans">Sí, para una demo real con tu operación. También hay un modo simulado para recorrer el flujo sin enviar archivos al Ministerio.</div></div>
-        <div class="faq-item"><h3><button type="button" aria-expanded="false">¿Se integra con nuestro sistema?</button></h3><div class="ans" hidden>Sí. Además del flujo estándar de carga de JSON y XML, hay RPA con Hosvital y Facture, y robots a la medida.</div></div>
-        <div class="faq-item"><h3><button type="button" aria-expanded="false">¿Qué incluye la implementación?</button></h3><div class="ans" hidden>Puesta en marcha, configuración y capacitación del equipo que va a operar la plataforma.</div></div>
-        <div class="faq-item"><h3><button type="button" aria-expanded="false">¿Qué cubre la mensualidad?</button></h3><div class="ans" hidden>El uso del plan contratado, soporte y las mejoras del producto. La implementación se cotiza aparte, según el volumen mensual de RIPS.</div></div>
-      </div>
-    </div></section>
-    <section class="section bg-mist" id="contacto"><div class="wrap contact">
-      <div>
-        <p class="kicker">Contacto</p>
-        <h2>Hablemos de tu operación de RIPS</h2>
-        <p class="lead">Cuéntanos quién eres y qué necesitas. Te respondemos para agendar la demo o cotizar la implementación.</p>
-        <p class="lead">WhatsApp <a href="https://wa.me/573152632407">+57 315 263 2407</a></p>
-        <p class="lead"><a href="mailto:info@gotisoutec.com">info@gotisoutec.com</a><br><a href="mailto:soporte@gotisoutec.com">soporte@gotisoutec.com</a></p>
-      </div>
-      <form class="form" id="contacto-form">
-        <div class="fields">
-          <label>Nombre<input name="nombre" autocomplete="name" required></label>
-          <label>IPS o empresa<input name="empresa" autocomplete="organization" required></label>
-          <label>Cargo<input name="cargo"></label>
-          <label>Correo<input name="correo" type="email" required></label>
-          <label>WhatsApp<input name="whatsapp" type="tel"></label>
-          <label>RIPS al mes<select name="ripsAlMes"><option value="">Selecciona un rango</option><option>1 a 200</option><option>201 a 500</option><option>501 a 1.500</option><option>Más de 1.500</option></select></label>
-          <label class="span-2">Interés<select name="interes"><option>RIPS</option><option>Armado de Cuenta</option><option>RPA a la medida</option></select></label>
-        </div>
-        <div class="hp" aria-hidden="true"><label>Sitio web<input name="company_website" tabindex="-1" autocomplete="off"></label></div>
-        <p class="consent">Al enviar autorizo el tratamiento de mis datos para contacto comercial, de acuerdo con la <a href="privacidad.html">política de tratamiento de datos</a>.</p>
-        <p class="form-msg" role="alert"></p>
-        <button class="btn btn-primary" type="submit" style="margin-top:1rem">Enviar y agendar demo</button>
-      </form>
-    </div></section>
-  </main>
-  <footer class="footer">
-    <div class="wrap footer-grid">
-      <div>
-        <a class="brand" href="index.html"><img src="https://ripssolutions.com/icon.png" width="36" height="36" alt=""><span><strong>RIPS<span>SOLUTIONS</span></strong><small>Tisoutec</small></span></a>
-        <p style="margin-top:1rem">Automatización y software para el sector salud</p>
-        <p>Tisoutec · Santa Marta, Colombia</p>
-        <p>Ing. Miguel Ángel Muñoz Cantillo</p>
-      </div>
-      <div><h4>Contacto</h4><ul><li><a href="https://wa.me/573152632407">WhatsApp +57 315 263 2407</a></li><li><a href="mailto:info@gotisoutec.com">info@gotisoutec.com</a></li><li><a href="mailto:soporte@gotisoutec.com">soporte@gotisoutec.com</a></li></ul></div>
-      <div><h4>Enlaces</h4><ul><li><a href="https://app.ripssolutions.com/">Entrar a la plataforma</a></li><li><a href="privacidad.html">Política de tratamiento de datos</a></li><li><a href="https://calendar.app.google/LBn7QmHrJofyFAu97">Agendar demo</a></li></ul></div>
-    </div>
-    <div class="wrap legal"><p>© 2026 Tisoutec. Ley 1581 de 2012.</p><p>Santa Marta, Magdalena, Colombia</p></div>
-  </footer>
-  <a class="wa" href="https://wa.me/573152632407" aria-label="Escribir por WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 11.5A8.5 8.5 0 1 1 8.2 4.7 8.5 8.5 0 0 1 20 11.5Z"/></svg></a>
-  <script src="assets/config.js"></script>
-  <script src="assets/app.js"></script>
-</body>
-</html>
+<header class="header"><div class="wrap">
+<a class="brand" href="index.html"><span class="mark">T</span><span><strong>TISOUTEC</strong><small>Tecnología que resuelve</small></span></a>
+<nav class="nav">
+<a href="#servicios">Servicios</a><a href="#soluciones">Soluciones</a><a href="#capacidades">Capacidades</a><a href="#proceso">Proceso</a><a href="#contacto">Contacto</a>
+<a class="btn btn-primary" href="#contacto">Cuéntanos tu proyecto</a>
+</nav>
+<button class="menu-btn" type="button" aria-label="Abrir menú">☰</button>
+</div></header>
+<div class="mobile-nav" id="menu-movil">
+<a href="#servicios">Servicios</a><a href="#soluciones">Soluciones</a><a href="#contacto">Contacto</a>
+<a class="btn btn-primary" href="#contacto">Cuéntanos tu proyecto</a>
+</div>
+<main>
+<section class="hero"><div class="wrap">
+<div>
+<p class="eyebrow">Software · Automatización · IA · Integración · Infraestructura</p>
+<h1>Tecnología para hacer crecer tu empresa</h1>
+<p class="sub">Desarrollamos software, automatizamos procesos e integramos tecnología para convertir problemas operativos en soluciones eficientes.</p>
+<div class="hero-cta">
+<a class="btn btn-primary" href="#soluciones">Conocer soluciones</a>
+<a class="btn btn-ghost" href="#contacto">Hablar con nosotros</a>
+</div>
+<p class="hint">Entender el problema primero. Diseñar la tecnología después.</p>
+</div>
+<div class="stack">
+<article><h3>Desarrollo</h3><p>Aplicaciones web, sistemas internos, APIs y plataformas SaaS a la medida.</p></article>
+<article><h3>Automatización</h3><p>RPA, reportes, documentos y flujos que hoy viven en Excel o en el correo.</p></article>
+<article><h3>Integración e infraestructura</h3><p>Conectamos sistemas existentes y dejamos la operación corriendo en servidor o nube.</p></article>
+</div></div></section>
+<section class="section"><div class="wrap">
+<p class="kicker">El punto de partida</p>
+<h2>Problemas que ayudamos a resolver</h2>
+<div class="grid-3">
+<article class="card"><h3>Procesos manuales</h3><p>Tareas que se copian y reenvían cada semana.</p></article>
+<article class="card"><h3>Sistemas desconectados</h3><p>Plataformas que no se hablan y nadie tiene la foto completa.</p></article>
+<article class="card"><h3>Software que no encaja</h3><p>La herramienta genérica no cubre la operación real.</p></article>
+</div></div></section>
+<section class="section bg-mist" id="servicios"><div class="wrap">
+<p class="kicker">Qué hacemos</p>
+<h2>Cinco capacidades, un mismo criterio: resolver.</h2>
+<div class="grid-5">
+<article class="card white"><h3>Desarrollo</h3><p>Software y aplicaciones a la medida.</p></article>
+<article class="card white"><h3>Automatización</h3><p>RPA, flujos, reportes y bots.</p></article>
+<article class="card white"><h3>Integración</h3><p>APIs, datos y plataformas de terceros.</p></article>
+<article class="card white"><h3>Inteligencia Artificial</h3><p>IA donde aporta valor al proceso.</p></article>
+<article class="card white"><h3>Infraestructura</h3><p>Servidores, Docker, nube y soporte.</p></article>
+</div></div></section>
+<section class="section" id="soluciones"><div class="wrap">
+<p class="kicker">Soluciones</p>
+<h2>Producto propio y construcción a la medida.</h2>
+<div class="product">
+<article class="product-main"><span class="badge">Producto Tisoutec</span><h3>RipsSolutions</h3><p>Plataforma para validar RIPS, obtener el CUV y armar cuentas médicas. Un producto de Tisoutec, no el nombre de la empresa.</p><a class="btn btn-primary" href="https://app.ripssolutions.com/">Entrar a la plataforma</a></article>
+<article class="product-side"><span class="badge">A la medida</span><h3>Si hoy lo haces en Excel, se puede construir.</h3><p>Paneles, integraciones, robots y aplicaciones internas.</p></article>
+</div></div></section>
+<section class="section bg-mist"><div class="wrap">
+<p class="kicker">Con quién trabajamos</p>
+<h2>Empresas que necesitan tecnología, no un paquete genérico.</h2>
+<div class="grid-2">
+<article class="card white"><h3>Empresas y operación</h3><p>Privadas, servicios, comercios y profesionales independientes.</p></article>
+<article class="card white"><h3>Salud, como área de experiencia</h3><p>IPS, clínicas y consultorios. Fortaleza, no el límite de la marca.</p></article>
+</div></div></section>
+<section class="section" id="capacidades"><div class="wrap split">
+<div><p class="kicker">Tecnología</p><h2>Capacidad técnica para dejarlo en producción.</h2></div>
+<div class="caps"><span>Aplicaciones web</span><span>APIs</span><span>Bases de datos</span><span>Docker</span><span>Linux y Windows</span><span>RPA</span><span>IA aplicada</span><span>RIPS / SISPRO</span><span>Nube y servidores</span></div>
+</div></section>
+<section class="section bg-mist"><div class="wrap why">
+<div><p class="kicker">Por qué Tisoutec</p><h2>No vendemos solo programación.</h2><p class="lead">Analizamos la operación y construimos la tecnología necesaria para resolverla.</p></div>
+<blockquote class="quote"><p>Entender el problema primero. Diseñar la tecnología después.</p><small>Tisoutec · Santa Marta, Colombia</small></blockquote>
+</div></section>
+<section class="section" id="proceso"><div class="wrap">
+<p class="kicker">Cómo trabajamos</p>
+<h2>Cinco pasos, del diagnóstico a la operación.</h2>
+<div class="steps">
+<article class="step"><span class="step-n">01</span><h3>Entendemos</h3><p>El proceso y el problema real.</p></article>
+<article class="step"><span class="step-n">02</span><h3>Diseñamos</h3><p>La solución y el alcance.</p></article>
+<article class="step"><span class="step-n">03</span><h3>Desarrollamos</h3><p>Construimos e integramos.</p></article>
+<article class="step"><span class="step-n">04</span><h3>Implementamos</h3><p>Lo dejamos en producción.</p></article>
+<article class="step"><span class="step-n">05</span><h3>Acompañamos</h3><p>Soporte y evolución.</p></article>
+</div></div></section>
+<section class="cta-band"><div class="wrap">
+<h2>Cuéntanos el proceso que hoy te quita tiempo.</h2>
+<div class="hero-cta">
+<a class="btn btn-primary" href="#contacto">Solicitar asesoría</a>
+<a class="btn btn-ghost" href="https://wa.me/573152632407">Hablar con un experto</a>
+</div></div></section>
+<section class="section bg-mist" id="contacto"><div class="wrap contact">
+<div><p class="kicker">Contacto</p><h2>Hablemos de tu proyecto</h2>
+<p class="lead">WhatsApp <a href="https://wa.me/573152632407">+57 315 263 2407</a></p>
+<p class="lead">info@gotisoutec.com</p></div>
+<form class="form" id="contacto-form">
+<div class="fields">
+<label>Nombre<input name="nombre" required></label>
+<label>Empresa<input name="empresa" required></label>
+<label>Correo<input name="correo" type="email" required></label>
+<label>WhatsApp<input name="whatsapp" type="tel"></label>
+<label class="span-2">Interés<select name="interes"><option>Desarrollo de software</option><option>Automatización / RPA</option><option>Integración</option><option>IA</option><option>Infraestructura</option><option>RipsSolutions / salud</option></select></label>
+</div>
+<button class="btn btn-primary" type="submit" style="margin-top:1rem">Quiero automatizar mi proceso</button>
+</form></div></section>
+</main>
+<footer class="footer"><div class="wrap legal"><p>© 2026 Tisoutec</p><p>Santa Marta, Colombia</p></div></footer>
+<a class="wa" href="https://wa.me/573152632407" aria-label="WhatsApp">WA</a>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body></html>
