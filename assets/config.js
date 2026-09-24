@@ -3,5 +3,5 @@ window.SITE = {
   whatsappUrl: "https://wa.me/573152632407",
   platformUrl: "https://app.ripssolutions.com/",
   emails: { info: "info@gotisoutec.com", support: "soporte@gotisoutec.com" },
-  webhookUrl: "",
+  webhookUrl: ""
 };
